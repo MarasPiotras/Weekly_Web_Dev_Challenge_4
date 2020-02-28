@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_mixins.sass",
+        "../sass/_menu.sass",
+        "../sass/_header.sass",
+        "../sass/_slider.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
