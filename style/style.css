@@ -48,9 +48,9 @@
 
 .hamburger-menu {
   position: absolute;
-  left: 0;
+  left: -100%;
   width: 100%;
-  font-size: 24px;
+  z-index: 1;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -91,9 +91,36 @@
   padding: 12px 5%;
 }
 
+.blog-content {
+  background-color: #152840;
+  color: white;
+}
+
+.blog-content ul {
+  list-style: none;
+  padding: 10%;
+  border: 1px solid #3C556F;
+}
+
+.blog-content ul li {
+  padding: 12px;
+}
+
+.blog-content ul li:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #56CCC8;
+}
+
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -105,6 +132,6 @@ body {
   width: 100%;
   max-width: 1168px;
   background-color: #4C5F7B;
-  font-size: 16px;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */
