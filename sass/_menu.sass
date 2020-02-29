@@ -1,0 +1,26 @@
+.top-menu
+    display: flex
+    padding: 0 2%
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    background-color: white
+    border: 1px solid black
+    ul 
+        display: none
+    .search
+        flex-grow: 1
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        margin: 0 2%
+        input 
+            width: 0
+            visibility: hidden
+    .menu-icons
+        border-left: 1px solid black
+        margin-left: 2px
+        padding-left: 4px
+        .fa-user
+            @extend .menu-icons
+        
