@@ -233,9 +233,14 @@ h1, h2 {
 }
 
 .facebook i:nth-child(4), .facebook i:nth-child(5), .twitter i:nth-child(4), .twitter i:nth-child(5) {
+  visibility: hidden;
   position: absolute;
   right: 8%;
   bottom: 8%;
+}
+
+.facebook i.visible, .twitter i.visible {
+  visibility: visible;
 }
 
 .sign-in, .newsletter {
@@ -279,6 +284,7 @@ h1, h2 {
 }
 
 form {
+  margin: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,5 +307,35 @@ input {
           flex-grow: 1;
   padding: .5em;
   margin-left: 5%;
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  padding: 5%;
+  max-width: 1168px;
+  height: 50vh;
+  background: url("../img/slide1.jpg") no-repeat center;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+  color: white;
+}
+
+.slider h1 {
+  margin-bottom: 1em;
+}
+
+.slider button, .slider p {
+  margin-bottom: 2em;
+}
+
+.slider button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.slider p {
+  font-size: .7em;
+  width: 90%;
 }
 /*# sourceMappingURL=style.css.map */
