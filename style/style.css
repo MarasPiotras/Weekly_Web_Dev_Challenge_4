@@ -36,6 +36,7 @@ i:hover {
   background-color: white;
   border: 1px solid black;
   font-size: 28px;
+  margin-bottom: 1em;
 }
 
 .top-menu ul {
@@ -92,6 +93,7 @@ i:hover {
 
 .hamburger-menu div {
   overflow: hidden;
+  height: 0;
 }
 
 .hamburger-menu .menu {
@@ -128,6 +130,10 @@ i:hover {
   left: 0;
 }
 
+.hamburger-menu.active div.active {
+  height: 100%;
+}
+
 .contact-data.active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -136,6 +142,7 @@ i:hover {
 .blog-content {
   background-color: #152840;
   color: white;
+  margin-bottom: 1em;
 }
 
 .blog-content ul {
@@ -156,5 +163,25 @@ i:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #56CCC8;
+}
+
+.social-media {
+  background-color: white;
+}
+
+.social-media ul {
+  list-style: none;
+}
+
+.social-media ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 5%;
+}
+
+.social-media ul li i {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 /*# sourceMappingURL=style.css.map */

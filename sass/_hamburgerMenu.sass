@@ -12,6 +12,7 @@
         flex-grow: 1
     div 
         overflow: hidden
+        height: 0
     .menu
         list-style: none
         li 
@@ -36,6 +37,8 @@
 
 .hamburger-menu.active 
     left: 0
+    div.active 
+        height: 100%
 
 .contact-data.active
     transform: translateY(0)
