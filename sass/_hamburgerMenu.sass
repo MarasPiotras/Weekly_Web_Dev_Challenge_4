@@ -1,3 +1,4 @@
+// hamburger menu styles
 .hamburger-menu
     position: absolute
     left: -100%
@@ -9,6 +10,8 @@
         flex-basis: 20%
     p 
         flex-grow: 1
+    div 
+        overflow: hidden
     .menu
         list-style: none
         li 
@@ -16,10 +19,31 @@
             padding: 12px 5% 
             border-bottom: #C1C9D1 solid 1px
             
-    .contact-data
-        background-color: #c5cdd0
-        color: white
-        li 
-            display: flex
-            padding: 12px 5% 
+.contact-data
+    background-color: #c5cdd0
+    position: relative
+    z-index: -1
+    transform: translateY(-100%)
+    color: white
+    transition: .4s
+    
+    li
+        display: flex
+        padding: 12px 5%
+// end of hamburger menu styles
+
+// hamburger menu actions on click hamburger icon and contact 
+
+.hamburger-menu.active 
+    left: 0
+
+.contact-data.active
+    transform: translateY(0)
+    
+// end of hamburger menu actions
+    
+        
+    
+    
+    
             
