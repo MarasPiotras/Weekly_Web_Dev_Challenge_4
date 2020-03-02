@@ -21,6 +21,18 @@ i:hover {
   font-size: 24px;
 }
 
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
 .top-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,6 +179,7 @@ i:hover {
 
 .social-media {
   background-color: white;
+  margin-bottom: 1em;
 }
 
 .social-media ul {
@@ -183,5 +196,110 @@ i:hover {
 .social-media ul li i {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
+}
+
+.facebook {
+  background-color: #4d6bab;
+}
+
+.twitter {
+  background-color: #4ec6f8;
+}
+
+.facebook, .twitter {
+  position: relative;
+  color: white;
+  height: 25vh;
+  margin-bottom: 1em;
+}
+
+.facebook i:nth-child(1), .twitter i:nth-child(1) {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  font-size: 2em;
+}
+
+.facebook p:nth-child(2), .twitter p:nth-child(2) {
+  position: absolute;
+  left: 8%;
+  bottom: 8%;
+}
+
+.facebook p:nth-child(3), .twitter p:nth-child(3) {
+  position: absolute;
+  bottom: 5%;
+  left: 52%;
+}
+
+.facebook i:nth-child(4), .facebook i:nth-child(5), .twitter i:nth-child(4), .twitter i:nth-child(5) {
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+}
+
+.sign-in, .newsletter {
+  height: 25vh;
+  background-color: white;
+  text-align: center;
+  padding: 5%;
+  margin-bottom: 1em;
+  line-height: 1.7em;
+}
+
+.sign-in h2, .sign-in p, .newsletter h2, .newsletter p {
+  font-size: .7em;
+}
+
+.sign-in i, .newsletter i {
+  margin: 5%;
+  font-size: 1.4em;
+}
+
+.sign-in i:nth-of-type(1), .newsletter i:nth-of-type(1) {
+  color: #4d6bab;
+}
+
+.sign-in i:nth-of-type(2), .newsletter i:nth-of-type(2) {
+  color: #4ec6f8;
+}
+
+.sign-in i:nth-of-type(3), .newsletter i:nth-of-type(3) {
+  color: #ec6061;
+}
+
+.sign-in i:nth-of-type(4), .newsletter i:nth-of-type(4) {
+  color: #248cc9;
+}
+
+@media (orientation: landscape) {
+  .sign-in, .newsletter {
+    height: 50vh;
+  }
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .5em;
+}
+
+button {
+  -ms-flex-preferred-size: 13%;
+      flex-basis: 13%;
+  text-transform: uppercase;
+  padding: .5em;
+  color: white;
+  background-color: #ea6060;
+  border-radius: 10%;
+}
+
+input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: .5em;
+  margin-left: 5%;
 }
 /*# sourceMappingURL=style.css.map */
