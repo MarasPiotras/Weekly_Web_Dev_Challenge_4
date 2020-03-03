@@ -1,7 +1,7 @@
 .slider
     position: relative
     width: 100vw
-    padding: 5%
+    padding: 5% 10%
     max-width: 1168px
     height: 50vh
     background: url("../img/slide1.jpg") no-repeat center
@@ -9,15 +9,40 @@
     background-position: center
     margin-bottom: 1em
     color: white
+    i 
+        position: absolute
+        top: 50%
+        font-size: 3em
+        opacity: .5
+        transform: translateY(-50%)
+    i.forward 
+        right: 0
+    i.backword
+        left: 0
     h1 
-        margin-bottom: 1em
+        margin-bottom: .5em
+        font-size: .7em
     button, p
-        margin-bottom: 2em
+        margin-bottom: 1em
     button 
         background-color: rgba(0, 0, 0, 0)
+
     p 
-        font-size: .7em
+        font-size: .5em
         width: 90%
+        line-height: 1.5em
+
+@media (min-width: 768px)
+    .slider
+        h1 
+            font-size: 1em
+            margin-bottom: 1em
+        button, p 
+            margin-bottom: 2em
+        p 
+            font-size: .7em
+    
+
 
     
         
