@@ -5,11 +5,12 @@
     align-items: center
     width: 100%
     background-color: white
-    border: 1px solid black
     font-size: 28px
     margin-bottom: 1em
     ul 
         display: none
+        list-style: none
+        width: 50%
     a 
         color: black
     .search
@@ -34,5 +35,12 @@
         .fa-user
             @extend .menu-icons
 
-    
+@media (min-width: 1024px)
+    .top-menu
+        padding: .2em
+        ul 
+            display: flex
+            justify-content: space-evenly
+        a:hover 
+            color: #55ccc8
     

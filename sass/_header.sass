@@ -118,16 +118,14 @@ button
     padding: .5em
     color: white
     background-color: #ea6060
-    border-radius: 10%
+    border-radius: 5%
 
 @media (min-width: 900px)
-    .blog-content, .social-media, .facebook, .twitter, .sign-in, .newsletter
-        // width: 45%
     
     header 
         display: grid
         grid-template-columns: 1fr 1fr
-        grid-template-rows: 6
+        grid-template-rows: 5
         grid-template-areas: "blog-content social-media" "blog-content facebook" "blog-content twitter" "blog-content sign-in" "newsletter newsletter"
         column-gap: 2%
 
@@ -145,10 +143,47 @@ button
         font-size: 1.5em
         i 
             font-size: 1.5em
+    
             
     .newsletter
         font-size: 1.5em
         grid-area: newsletter
+
+@media (min-width: 1024px)
+    header 
+        padding: 2%
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-template-rows: 6
+        grid-template-areas: ". blog-content social-media facebook" ". blog-content social-media twitter" ". blog-content sign-in sign-in" ". blog-content newsletter newsletter"
+        column-gap: 2%
+        .sign-in, .newsletter
+            align-self: center
+            font-size: 1em
+            i
+                font-size: 2em
+            button
+                flex-basis: 30%
+                border: 1px solid #ffffff
+                cursor: pointer
+            input 
+                padding: 1em
+            button, input, i 
+                margin-top: 2em
+        .blog-content
+            align-self: center
+            ul:hover 
+                transition: .3s
+                background-color: #263a53
+        .social-media
+            a:hover
+                color: #50c6f8
+
+    a:hover, i:hover, li:hover, button:hover
+        transform: scale(1.1)
+        cursor: pointer
+        transition: .3s
+        
         
 
 
