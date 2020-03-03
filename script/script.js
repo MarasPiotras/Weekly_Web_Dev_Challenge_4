@@ -93,9 +93,27 @@ function automatic() {
     setTimeout(automatic, timer)
 }
 
+//follow/unfollow function
 
 
+//twitter
+document.querySelector(".twitter>.fa-plus-circle").addEventListener("click", function () {
+    document.querySelector(".twitter>.fa-plus-circle").classList.toggle("visible")
+    document.querySelector(".twitter>.fa-check-circle").classList.toggle("visible")
+})
 
+document.querySelector(".twitter>.fa-check-circle").addEventListener("click", function () {
+    document.querySelector(".twitter>.fa-plus-circle").classList.toggle("visible")
+    document.querySelector(".twitter>.fa-check-circle").classList.toggle("visible")
+})
 
+//facebook
+document.querySelector(".facebook>.fa-plus-circle").addEventListener("click", function () {
+    document.querySelector(".facebook>.fa-plus-circle").classList.toggle("visible")
+    document.querySelector(".facebook>.fa-check-circle").classList.toggle("visible")
+})
 
-//change photo
+document.querySelector(".facebook>.fa-check-circle").addEventListener("click", function () {
+    document.querySelector(".facebook>.fa-plus-circle").classList.toggle("visible")
+    document.querySelector(".facebook>.fa-check-circle").classList.toggle("visible")
+})
