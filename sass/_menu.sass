@@ -21,6 +21,11 @@
         input 
             width: 0
             visibility: hidden
+            transition: .4s
+
+        input.active-search
+            width: 100%
+            visibility: visible
     .menu-icons
         border-left: 1px solid black
         margin-left: 2px
@@ -28,4 +33,6 @@
         
         .fa-user
             @extend .menu-icons
+
+    
     

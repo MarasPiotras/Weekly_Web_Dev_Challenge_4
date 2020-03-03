@@ -76,6 +76,12 @@
     i 
         margin: 5%
         font-size: 1.4em
+    
+    input 
+        flex-grow: 1
+        padding: .5em
+        margin-left: 5%
+
    
     
     a:nth-of-type(1) 
@@ -91,6 +97,16 @@
     .sign-in, .newsletter
         height: 50vh
 
+@media (min-width: 768px)
+    .sign-in, .newsletter
+        font-size: 1.5em
+        i 
+            font-size: 2em
+    .newsletter
+        input 
+            font-size: 1.4em
+
+
 form 
     margin: 5%
     display: flex
@@ -104,8 +120,42 @@ button
     background-color: #ea6060
     border-radius: 10%
 
-input 
-    flex-grow: 1
-    padding: .5em
-    margin-left: 5%
+@media (min-width: 900px)
+    .blog-content, .social-media, .facebook, .twitter, .sign-in, .newsletter
+        // width: 45%
+    
+    header 
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 6
+        grid-template-areas: "blog-content social-media" "blog-content facebook" "blog-content twitter" "blog-content sign-in" "newsletter newsletter"
+        column-gap: 2%
+
+    .blog-content
+        grid-area: blog-content
+    .social-media
+        grid-area: social-media
+    .facebook
+        grid-area: facebook
+    .twitter
+        grid-area: twitter
+    .sign-in
+        grid-area: sign-in
+        align-self: end
+        font-size: 1.5em
+        i 
+            font-size: 1.5em
+            
+    .newsletter
+        font-size: 1.5em
+        grid-area: newsletter
+        
+
+
+   
+
+    
+       
+    
+
 
