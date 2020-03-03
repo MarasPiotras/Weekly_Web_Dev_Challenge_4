@@ -4,7 +4,7 @@
     padding: 5% 10%
     max-width: 1168px
     height: 50vh
-    background: url("../img/slide1.jpg") no-repeat center
+    background: url("../img/slide2.jpg") no-repeat center
     background-size: cover
     background-position: center
     margin-bottom: 1em
@@ -12,6 +12,7 @@
     i 
         position: absolute
         top: 50%
+        transition: .5s
         font-size: 3em
         opacity: .5
         transform: translateY(-50%)
@@ -32,6 +33,27 @@
         width: 90%
         line-height: 1.5em
 
+    div 
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        width: 4em
+        height: 1.4em
+    
+    span 
+        width: .7em
+        height: .7em
+        border: 1px solid white
+        border-radius: 50%
+        transition: .4s
+
+    span.active 
+        background-color: white
+
 @media (min-width: 768px)
     .slider
         h1 
@@ -41,6 +63,17 @@
             margin-bottom: 2em
         p 
             font-size: .9em
+        i 
+            opacity: .2
+        i:hover 
+            cursor: pointer
+            opacity: .8
+            background-color: rgba(0, 0, 0, .6)
+
+        span:hover
+            cursor: pointer
+
+
     
 
 
