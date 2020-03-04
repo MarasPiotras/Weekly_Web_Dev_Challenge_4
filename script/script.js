@@ -23,7 +23,7 @@ let timer = 5000
 automatic()
 
 //selecting active dot when document ready
-document.querySelector(defaultDot).classList.add('active')
+// document.querySelector(defaultDot).classList.add('active')
 
 //change slide index on dot click
 document.querySelector("#img1").addEventListener("click", function () {
