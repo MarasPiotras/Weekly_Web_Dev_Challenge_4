@@ -47,17 +47,17 @@ function changeImages() {
         document.querySelector("#img1").classList.add('active')
         document.querySelector("#img2").classList.remove('active')
         document.querySelector("#img3").classList.remove('active')
-        document.querySelector(".slider").style.backgroundImage = "url('../img/" + images[slideIndex] + "')";
+        document.querySelector(".slider").style.backgroundImage = "url('./img/" + images[slideIndex] + "')";
     } else if (slideIndex == 1) {
         document.querySelector("#img2").classList.add('active')
         document.querySelector("#img1").classList.remove('active')
         document.querySelector("#img3").classList.remove('active')
-        document.querySelector(".slider").style.backgroundImage = "url('../img/" + images[slideIndex] + "')";
+        document.querySelector(".slider").style.backgroundImage = "url('./img/" + images[slideIndex] + "')";
     } else {
         document.querySelector("#img3").classList.add('active')
         document.querySelector("#img1").classList.remove('active')
         document.querySelector("#img2").classList.remove('active')
-        document.querySelector(".slider").style.backgroundImage = "url('../img/" + images[slideIndex] + "')";
+        document.querySelector(".slider").style.backgroundImage = "url('./img/" + images[slideIndex] + "')";
     }
 }
 
